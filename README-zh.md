@@ -55,9 +55,9 @@ create-ai-toolkit 可以根据暂存区的内容自动生成提交信息，确�
 确保你的 Node.js 版本在 v18 以上，并全局安装 create-ai-toolkit：
 
 ```bash
-npm install -g create-ai-toolkit-test
+npm install -g ai-log-review
 # 或者使用 pnpm
-pnpm add -g create-ai-toolkit-test
+pnpm add -g ai-log-review
 ```
 
 ### 2. 添加 API Key
