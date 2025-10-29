@@ -62,7 +62,11 @@ export default async function commitMessage() {
     fs.writeFileSync(filePath, completion, 'utf8');
 
     s.stop();
-    outro('result');
+    
+    // 在终端显示审查结果
+    console.log('\n' + completion + '\n');
+    
+    outro(`✅ 代码审查完成！详细结果已保存到: ${filePath}`);
   } catch (err) {
     s.stop();
     console.error('错误:', err);
